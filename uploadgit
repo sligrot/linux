@@ -1,3 +1,6 @@
 git add [file]
 git commit -m "comment"
 git push -u origin master
+
+sync:
+git pull origin master
