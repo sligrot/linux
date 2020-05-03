@@ -1,3 +1,4 @@
-alias cat='batcat --theme="ansi-dark" $1'
+alias ccat='batcat --theme="ansi-dark" $1'
 alias ls='ls -cAlhv --color=auto --si --group-directories-first'
 alias grep='grep -i $1 --color=auto'
+alias findall='sudo find / -iname "$1"'
