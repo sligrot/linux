@@ -1,0 +1,33 @@
+Looking for git in: git
+Using git 2.20.1 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /home/oxo
+> git status -z -u
+> git show :.config/sway/config
+> git ls-files --stage -- /home/oxo/.config/sway/config
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :.config/sway/config
+> git ls-files --stage -- /home/oxo/.config/sway/config
+> git show :.config/waybar/config
+> git ls-files --stage -- /home/oxo/.config/waybar/config
+> git check-ignore -v -z --stdin
+> git show :.config/sway/config
+> git ls-files --stage -- /home/oxo/.config/sway/config
+> git show :.config/waybar/config
+> git ls-files --stage -- /home/oxo/.config/waybar/config
+> git show :.config/sway/config
+> git ls-files --stage -- /home/oxo/.config/sway/config
+> git show :.config/rofi/config
+> git ls-files --stage -- /home/oxo/.config/rofi/config
+> git check-ignore -v -z --stdin
+> git show :.config/sway/config
+> git ls-files --stage -- /home/oxo/.config/sway/config

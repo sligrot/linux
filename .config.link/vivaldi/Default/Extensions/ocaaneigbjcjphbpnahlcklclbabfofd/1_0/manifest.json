@@ -1,0 +1,23 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "scripts/background.js" ]
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "externally_connectable": {
+      "accepts_tls_channel_id": true,
+      "matches": [ "*://bn.phonero.no/*" ]
+   },
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7sB/vexGUu+3vkTb2AqiUmWAKw25LZ8fVd15yTtmORZ9ePn43wLN2UDA6Llp0V1P3v94l92KtFeSjdJgaoNh4wI96eGkAqPi1LyBuonShLJsflfv1kZhijB6ZHcBupaMuoghn+LQ5o0JPeX2GjOU7NNs7knRZlvAm0abzv9lT4AllRtZJ2iH1ur5R7MFbhjdtBFmO22DChG0dxcGcnT164posfDHlGcYn/RlU/8wmAf0vGQ7k2cSorgNZKy7sjVB+MsfpHbMdojMK5w8SsTOgM1IfNK5J3YDBv+a8qfb7sjvBAhE7v2gpx1UmSmKhq+5/SUfgwWavCP+px2BcZZqSwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "permissions": [ "audioCapture", "usb", "webview", "background", "notifications", "videoCapture", "alwaysOnTopWindows", "storage", "unlimitedStorage", "background" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1"
+}

@@ -1,0 +1,5 @@
+2020/05/03-12:10:59.023 3420 Reusing MANIFEST /home/oxo/.config/vivaldi/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/03-12:10:59.023 3420 Recovering log #4
+2020/05/03-12:10:59.023 3420 Reusing old log /home/oxo/.config/vivaldi/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/000004.log 
+2020/05/03-20:54:25.973 c9f Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/03-20:54:25.974 c9f Manual compaction at level-1 from (begin) .. (end); will stop at (end)

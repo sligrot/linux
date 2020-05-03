@@ -1,0 +1,8 @@
+2020/05/03-13:54:44.187 3c63 Reusing MANIFEST /home/oxo/.config/vivaldi/Default/IndexedDB/https_tpc.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/03-13:54:44.187 3c63 Recovering log #14
+2020/05/03-13:54:44.187 3c63 Reusing old log /home/oxo/.config/vivaldi/Default/IndexedDB/https_tpc.googlesyndication.com_0.indexeddb.leveldb/000014.log 
+2020/05/03-13:57:33.053 c9f Level-0 table #18: started
+2020/05/03-13:57:33.053 c9f Level-0 table #18: 0 bytes OK
+2020/05/03-13:57:33.056 c9f Delete type=0 #14
+2020/05/03-13:57:33.056 c9f Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/03-13:57:33.056 c9f Manual compaction at level-1 from (begin) .. (end); will stop at (end)

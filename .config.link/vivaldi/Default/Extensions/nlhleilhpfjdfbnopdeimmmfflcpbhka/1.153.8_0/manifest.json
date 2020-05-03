@@ -1,0 +1,42 @@
+{
+   "background": {
+      "scripts": [ "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/icon128.png",
+         "19": "images/icon19.png",
+         "32": "images/icon32.png",
+         "48": "images/icon48.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "__MSG_app_name__"
+   },
+   "content_scripts": [ {
+      "js": [ "js/content-script.js" ],
+      "matches": [ "https://*.foxitsoftware.com/*", "http://*.foxitsoftware.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_app_desc__",
+   "externally_connectable": {
+      "matches": [ "https://*.foxitsoftware.com/*" ]
+   },
+   "homepage_url": "https://online.foxitsoftware.com",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "19": "images/icon19.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj+xLRHCeq6uCCtyIS/qT3/4QsdKrVffbG4qiLzTMI+gsapXPMG1kHx6fCQLKZbAFRcM2BRHKclnnbJV3sHwHZJFTjVfFgnWO8qlx30yFFey1h53Q+bDa87ZwRHaznzca/VgyZ9qharm31HK/dRbYfQBWn0DXxzOcrehk+fh0Sl1g1PfGARzSPTMXqRsxEXabfBKKTQ45kLYptssPCD+yG0/TeKvYLKfX2fyMn59uCfcsx5MnDxg5T4BMSJBF3hyrgpY7KwNLAfAffPkVzAHCRz8ptTEn4DYrCyapAJXdvMRdQ4e11JaJGO2N8rvwKiB8cv9ryavkuhcmUVxXxPkYTwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_app_name__",
+   "permissions": [ "contextMenus", "pageCapture", "tabs", "downloads", "notifications", "cookies", "\u003Call_urls>", "http://*/*", "https://*/*" ],
+   "short_name": "PDF Convert Tools",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.153.8",
+   "web_accessible_resources": [ "images/*.png" ]
+}

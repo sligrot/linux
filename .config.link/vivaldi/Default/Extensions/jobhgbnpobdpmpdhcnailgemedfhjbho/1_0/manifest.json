@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://script.google.com/a/macros/simpleappssolutions.com/s/AKfycbwihr4hcIMAxngukesXBVWnyLCEc6UmN-Iaqv9_tKv0mJrT_Rrv/exec"
+      },
+      "urls": [ "https://script.google.com/a/macros/simpleappssolutions.com/s/AKfycbwihr4hcIMAxngukesXBVWnyLCEc6UmN-Iaqv9_tKv0mJrT_Rrv/exec" ]
+   },
+   "description": "",
+   "icons": {
+      "128": "script-icon.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCLmV7zGsW14Cyo7D6WeapbMqkkzpl/IKfZh29ze2Ge0NmgzVkmouJZbCMy1SSGdvs4wQE8dcsSGbhHzKvTfhDCaerimzx/PzJGq5arHYkaLfsoOzvmhzIgrPsYB25oyHI3lWt6DSznHK2v1+aRCwsF/EtP6V1wWrjTgfthJdGSnwIDAQAB",
+   "manifest_version": 2,
+   "name": "Gmail Print All Pro",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1"
+}

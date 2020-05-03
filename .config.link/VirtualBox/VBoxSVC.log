@@ -1,0 +1,26 @@
+24:00:11.275877 nspr-8   Log continuation - Log started 2020-05-02T12:20:33.772503000Z
+24:00:14.292005 nspr-4   Saving settings file "/home/oxo/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+28:21:05.293483 nspr-5   Saving settings file "/home/oxo/VirtualBox VMs/win/win.vbox" with version "1.15-linux"
+28:21:05.365088 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+28:21:05.366655 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+28:21:08.324463 nspr-6   Saving settings file "/home/oxo/VirtualBox VMs/win/win.vbox" with version "1.15-linux"
+28:21:08.367025 nspr-6   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+28:21:08.368106 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+28:21:40.623406 nspr-2   Saving settings file "/home/oxo/VirtualBox VMs/win/win.vbox" with version "1.15-linux"
+28:21:40.663360 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+28:21:40.664307 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={16ced992-5fdc-4aba-aff5-6a39bbd7c38b} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true  aResultDetail=0
+30:33:54.081131 Watcher  Reaper: Pid 17068 (42ac) exited normally: 1 (0x1)
+30:33:55.086145 nspr-5   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={The object is not ready}, preserve=false aResultDetail=0
+30:33:55.088423 nspr-5   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={The object is not ready}, preserve=false aResultDetail=0
+30:33:55.088463 nspr-5   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Assertion failed: [SUCCEEDED(rc)] at '/home/vbox/vbox-6.1.4/src/VBox/Main/src-server/MachineImpl.cpp' (10432) in nsresult Machine::i_saveStorageControllers(settings::Storage&).
+30:33:55.088468 nspr-5   COM RC=E_ACCESSDENIED (0x80070005).
+30:33:55.088469 nspr-5   Please contact the product vendor!}, preserve=false aResultDetail=0
+30:33:55.092873 main     Saving settings file "/home/oxo/VirtualBox VMs/win/win.vbox" with version "1.15-linux"
+30:33:58.425898 main     VirtualBox: object deletion starts
+30:33:58.425961 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/oxo/VirtualBox VMs/win/win.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+30:33:58.427372 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/oxo/VirtualBox VMs/debian/debian.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+30:33:58.427464 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/oxo/VirtualBox VMs/debi/debi.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+30:33:58.427914 main     HostDnsMonitor: shutting down ...
+30:33:58.428381 main     HostDnsMonitor: shut down
+30:33:58.582687 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+30:34:00.691954 main     VirtualBox: object deleted

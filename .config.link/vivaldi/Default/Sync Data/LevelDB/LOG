@@ -1,0 +1,5 @@
+2020/05/03-20:55:39.150 3b6 Reusing MANIFEST /home/oxo/.config/vivaldi/Default/Sync Data/LevelDB/MANIFEST-000001
+2020/05/03-20:55:39.151 3b6 Recovering log #1982
+2020/05/03-20:55:39.154 3b6 Level-0 table #1985: started
+2020/05/03-20:55:39.162 3b6 Level-0 table #1985: 354784 bytes OK
+2020/05/03-20:55:39.166 3b6 Delete type=0 #1982

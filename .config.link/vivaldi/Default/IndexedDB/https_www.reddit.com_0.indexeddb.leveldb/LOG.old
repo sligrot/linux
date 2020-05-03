@@ -1,0 +1,15 @@
+2020/05/03-18:49:21.986 6527 Reusing MANIFEST /home/oxo/.config/vivaldi/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/03-18:49:21.986 6527 Recovering log #4
+2020/05/03-18:49:21.986 6527 Reusing old log /home/oxo/.config/vivaldi/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000004.log 
+2020/05/03-18:49:59.153 c9f Level-0 table #8: started
+2020/05/03-18:49:59.157 c9f Level-0 table #8: 1209 bytes OK
+2020/05/03-18:49:59.159 c9f Delete type=0 #4
+2020/05/03-18:49:59.159 c9f Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/03-18:49:59.159 c9f Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x15\x00v\x002\x00_\x00e\x00v\x00e\x00n\x00t\x00_\x00b\x00o\x00i\x00l\x00e\x00r\x00_\x00p\x00l\x00a\x00t\x00e' @ 62 : 1
+2020/05/03-18:49:59.159 c9f Compacting 1@1 + 1@2 files
+2020/05/03-18:49:59.161 c9f Generated table #9@1: 20 keys, 1201 bytes
+2020/05/03-18:49:59.161 c9f Compacted 1@1 + 1@2 files => 1201 bytes
+2020/05/03-18:49:59.163 c9f compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/05/03-18:49:59.163 c9f Delete type=2 #5
+2020/05/03-18:49:59.163 c9f Delete type=2 #8
+2020/05/03-18:49:59.164 c9f Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x15\x00v\x002\x00_\x00e\x00v\x00e\x00n\x00t\x00_\x00b\x00o\x00i\x00l\x00e\x00r\x00_\x00p\x00l\x00a\x00t\x00e' @ 62 : 1 .. (end); will stop at (end)

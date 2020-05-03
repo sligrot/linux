@@ -1,0 +1,15 @@
+2020/05/03-20:46:10.700 2ca Reusing MANIFEST /home/oxo/.config/vivaldi/Default/IndexedDB/https_tpc.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/03-20:46:10.700 2ca Recovering log #17
+2020/05/03-20:46:10.701 2ca Reusing old log /home/oxo/.config/vivaldi/Default/IndexedDB/https_tpc.googlesyndication.com_0.indexeddb.leveldb/000017.log 
+2020/05/03-20:46:32.385 c9f Level-0 table #21: started
+2020/05/03-20:46:32.387 c9f Level-0 table #21: 190 bytes OK
+2020/05/03-20:46:32.389 c9f Delete type=0 #17
+2020/05/03-20:46:32.389 c9f Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/03-20:46:32.390 c9f Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x05' @ 10 : 1
+2020/05/03-20:46:32.390 c9f Compacting 1@1 + 1@2 files
+2020/05/03-20:46:32.391 c9f Generated table #22@1: 8 keys, 368 bytes
+2020/05/03-20:46:32.391 c9f Compacted 1@1 + 1@2 files => 368 bytes
+2020/05/03-20:46:32.394 c9f compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/05/03-20:46:32.394 c9f Delete type=2 #9
+2020/05/03-20:46:32.394 c9f Delete type=2 #21
+2020/05/03-20:46:32.394 c9f Manual compaction at level-1 from '\x00\x00\x00\x00\x05' @ 10 : 1 .. (end); will stop at (end)

@@ -1,0 +1,15 @@
+2020/05/03-15:38:30.576 4caa Reusing MANIFEST /home/oxo/.config/vivaldi/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/03-15:38:30.576 4caa Recovering log #23
+2020/05/03-15:38:30.576 4caa Reusing old log /home/oxo/.config/vivaldi/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/000023.log 
+2020/05/03-15:39:02.597 c9f Level-0 table #28: started
+2020/05/03-15:39:02.600 c9f Level-0 table #28: 665 bytes OK
+2020/05/03-15:39:02.602 c9f Delete type=0 #23
+2020/05/03-15:39:02.602 c9f Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/03-15:39:02.602 c9f Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x0a\x00s\x00w\x00_\x00v\x00e\x00r\x00s\x00i\x00o\x00n' @ 134 : 1
+2020/05/03-15:39:02.602 c9f Compacting 1@1 + 1@2 files
+2020/05/03-15:39:02.603 c9f Generated table #29@1: 24 keys, 740 bytes
+2020/05/03-15:39:02.603 c9f Compacted 1@1 + 1@2 files => 740 bytes
+2020/05/03-15:39:02.605 c9f compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/05/03-15:39:02.606 c9f Delete type=2 #25
+2020/05/03-15:39:02.606 c9f Delete type=2 #28
+2020/05/03-15:39:02.606 c9f Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x0a\x00s\x00w\x00_\x00v\x00e\x00r\x00s\x00i\x00o\x00n' @ 134 : 1 .. (end); will stop at (end)

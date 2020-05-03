@@ -1,0 +1,446 @@
+<html>
+<head>
+
+    <script>
+        /*,
+        "ToolName":{
+            "pdfToWord": "PDF To Word",
+                "pdfToExcel": "PDF To Excel",
+                "pdfToPowerPoint": "PDF To PPT",
+                "pdfToText": "PDF To Text",
+                "pdfToImage": "PDF To JPG",
+                "pdfToHtml": "PDF To Html",
+                "pdfToCPDF": "PDF To cPDF",
+                "wordToPDF": "Word To PDF",
+                "excelToPDF": "Excel To PDF",
+                "htmlToPDF": "HTML To PDF",
+                "powerPointToPDF": "PPT To PDF",
+                "textToPDF": "Text To PDF",
+                "pdfInkSign":"Sign PDF",
+                "imageToPDF": "Image To PDF",
+                "mergePDF": "Merge PDF",
+                "splitPDF": "Split PDF",
+                "pageOrganizer": "Organize PDF",
+                "addHeaderFooter": "Header & Footer",
+                "addWatermark": "Watermark",
+                "flattenPDF": "Flatten PDF",
+                "redactPDF": "Redact PDF",
+                "passwordProtect": "Password Protect",
+                "compressPDF": "Compress PDF",
+                "exportAllImg": "Export All Images"
+        }*/
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 300px;
+            height: 378px;
+        }
+        input[type="button"]:focus {outline:none;}
+        .bs button::-moz-focus-inner,
+        .bs input::-moz-focus-inner {
+            padding: 0;
+            border: 0; }
+
+        button::-moz-focus-inner,
+        input[type="reset"]::-moz-focus-inner,
+        input[type="button"]::-moz-focus-inner,
+        input[type="submit"]::-moz-focus-inner,
+        input[type="file"] > input[type="button"]::-moz-focus-inner {
+            border: none;
+
+        }
+        /*.show{
+            display: block ;
+        }*/
+        .hide{
+            display: none!important;
+        }
+        .header, .item{
+            display: block;
+            height: 54px;
+            width: 100%;
+        }
+        .header .logo{
+            background: url('./images/foxit-online-logo.png') no-repeat center center;
+            background-size: 194px 30px;
+            padding: 12px;
+            width: 194px;
+            height: 30px;
+        }
+        .icon-search{
+            background: url('./images/search.svg') no-repeat center;
+            position: relative;
+            background-size: 20px 20px;
+            width: 54px;
+            height: 54px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.3;
+            /*left: 226px;*/
+            transition: opacity 200ms ease-in-out;
+            /*padding: 18px;*/
+        }
+        .search-text{
+            height: 27px;
+            font-size: 15px;
+        }
+        .icon-cancel-search{
+            display: none;
+        }
+        .items-wrapper{
+            height: 324px;
+            width: 100%;
+            overflow-y: scroll;
+        }
+        a:visited, a:hover, a:active, a:link{
+            text-decoration:none;
+            color: #FFFFFF;
+        }
+        .tool-text{
+            padding-left: 20px;
+            font-size: 16px;
+            color: #FFFFFF;
+            line-height: 54px;
+        }
+        .inline-cell{
+            float: left;
+            /*line-height: 54px;*/
+        }
+        .inline-block{
+            display: inline-block;
+            vertical-align: middle;
+            /*line-height: 54px;*/
+        }
+
+        .clr.pdf-to-word {
+            background-color: #bd081c;
+        }
+
+        .clr.pdf-to-excel {
+            background-color: #e53238;
+        }
+
+        .clr.pdf-to-image {
+            background-color: #ff5a5f;
+        }
+
+        .clr.export-image {
+            background-color: #fb4226;
+        }
+
+        .clr.pdf-to-ppt {
+            background-color: #f44600;
+        }
+
+        .clr.pdf-to-text {
+            background-color: #ff6600;
+        }
+
+        .clr.word-to-pdf {
+            background-color: #f88d2d;
+        }
+
+        .clr.excel-to-pdf {
+            background-color: #fd8308;
+        }
+
+        .clr.image-to-pdf {
+            background-color: #ffbb00;
+        }
+
+        .clr.html-to-pdf {
+            background-color: #E2CA09;
+        }
+
+        .clr.ppt-to-pdf {
+            background-color: #9db63b;
+        }
+
+        .clr.text-to-pdf {
+            background-color: #7ebd00;
+        }
+
+        .clr.pdf-inksign {
+            background-color: #5fcf80;
+        }
+
+        .clr.merge-pdf {
+            background-color: #00b1ab;
+        }
+
+        .clr.add-watermark {
+            background-color: #2dc9d7;
+        }
+
+        .clr.compress-pdf {
+            background-color: #3abfe6;
+        }
+
+        .clr.split-pdf {
+            background-color: #1769ff;
+        }
+
+        .clr.organize-pdf {
+            background-color: #4574e0;
+        }
+
+        .clr.flatten-pdf {
+            background-color: #777bb4;
+        }
+
+        .clr.add-header-footer {
+            background-color: #6a5fbb;
+        }
+
+        .clr.password-protect {
+            background-color: #744c9e;
+        }
+
+        .clr.redact-pdf {
+            background-color: #7289da;
+        }
+
+        .clr.pdf-to-html {
+            background-color: #663366;
+        }
+
+        .clr.pdf-to-cpdf {
+            background-color: #411241;
+        }
+
+        .clr.edit-pdf {
+            background-color: #9F159F;
+        }
+        .clr.foxit-drive {
+            background-color: #744c9e;
+        }
+        
+        .bs .tool-icon{
+            background: url('./images/tools.svg') no-repeat;
+            position: relative;
+            background-size: 317.144px 90px;
+            width: 39.643px;
+            height: 30px;
+            margin-left: 18px;
+            margin-right: auto;
+            margin-top: 12px;
+        }
+        .bs .pdf-to-word .tool-icon{
+            background-position:0px 0px;
+        }
+        .bs .pdf-to-excel .tool-icon{
+            background-position:-39.643px 0px;
+        }
+        .bs .pdf-to-image .tool-icon{
+            background-position:-79.283px 0px;
+        }
+        .bs .pdf-to-ppt .tool-icon{
+            background-position:-118.929px 0px;
+        }
+        .bs .pdf-to-text .tool-icon{
+            background-position:-158.571px 0px;
+        }
+        .bs .pdf-to-html .tool-icon{
+            background-position:-198.214px 0px;
+        }
+        .bs .merge-pdf .tool-icon{
+            background-position:-277.5px 0px;
+        }
+        .bs .add-header-footer .tool-icon{
+            background-position:-237.857px 0px;
+        }
+        .bs .word-to-pdf .tool-icon{
+            background-position:0px -30px;
+        }
+        .bs .excel-to-pdf .tool-icon{
+            background-position:-39.643px -30px;
+        }
+        .bs .image-to-pdf .tool-icon{
+            background-position:-79.283px -30px;
+        }
+        .bs .ppt-to-pdf .tool-icon{
+            background-position:-118.929px -30px;
+        }
+        .bs .text-to-pdf .tool-icon{
+            background-position:-158.571px -30px;
+        }
+        .bs .pdf-inksign .tool-icon{
+            background-position:-277.5px -60px;
+        }
+        .bs .html-to-pdf .tool-icon{
+            background-position:-198.214px -30px;
+        }
+        .bs .add-watermark .tool-icon{
+            background-position:-237.857px -30px;
+        }
+        .bs .split-pdf .tool-icon{
+            background-position:-277.5px -30px;
+        }
+        .bs .redact-pdf .tool-icon{
+            background-position:0px -60px;
+        }
+        .bs .compress-pdf .tool-icon{
+            background-position:-39.643px -60px;
+        }
+        .bs .organize-pdf .tool-icon{
+            background-position:-79.283px -60px;
+        }
+        .bs .password-protect .tool-icon{
+            background-position:-118.929px -60px;
+        }
+        .bs .flatten-pdf .tool-icon{
+            background-position:-158.571px -60px;
+        }
+        .bs .export-image .tool-icon{
+            background-position:-198.214px -60px;
+        }
+        .bs .pdf-to-cpdf .tool-icon{
+            background-position:-237.857px -60px;
+        }
+
+        .bs .edit-pdf .tool-icon{
+            background-position:0px -60px;
+        }
+        .bs .foxit-drive .tool-icon{
+            background: url('./images/foxit-cloud.svg') no-repeat;
+            background-position:0px 0px;
+            background-size: 39.643px 30px;
+        }
+        </style>
+</head>
+
+<body class="bs ">
+    <!--<div id="btns">
+        <div style="margin: 30px 0px 20px 20px;">
+            <span>URL:</span>
+            <input id='url' type="text" style="width: 230px;" value="http://confluence.foxitsoftware.com/"/>
+        </div>
+        <div>
+            <button id="showframe" style="margin-left: 200px; width: 50px; height: 23px;  font-size: 14px;">next</button>
+        </div>
+    </div>-->
+    <div class="header">
+        <a target="_blank" class="inline-block logo-wrapper " href=""><div class="logo"></div></a>
+        <input type="button" class="inline-block icon-search">
+        <!--<button ></button>-->
+        <input class="inline-block search-text hide" type="text">
+        <!--<button class="icon-cancel-search"></button>-->
+    </div>
+    <div class="items-wrapper">
+        <a class="item clr pdf-to-word"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell">PDF To Word</div>
+        </a>
+        <a class="item clr pdf-to-excel"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell">PDF To Excel</div>
+        </a>
+        <a class="item clr pdf-to-image"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell">PDF To JPG</div>
+        </a>
+        <a class="item clr export-image"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr pdf-to-ppt"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr pdf-to-text"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr word-to-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr excel-to-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr image-to-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr html-to-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr ppt-to-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr text-to-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr pdf-inksign"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr merge-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr add-watermark"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr compress-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr split-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr organize-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr flatten-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr add-header-footer"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr password-protect"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr redact-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr pdf-to-html"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr pdf-to-cpdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell"></div>
+        </a>
+        <a class="item clr edit-pdf"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell">Edit PDF</div>
+        </a>
+        <a class="item clr foxit-drive"  href="#" target="_blank">
+            <div class="tool-icon inline-cell"></div>
+            <div class="tool-text inline-cell">Foxit Drive</div>
+        </a>
+    </div>
+
+
+
+</body>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/popup.js"></script>
+</html>

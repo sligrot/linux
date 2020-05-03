@@ -1,0 +1,5 @@
+2020/05/02-21:25:17.321 322b Reusing MANIFEST /home/oxo/.config/vivaldi/Default/IndexedDB/https_download.cnet.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/02-21:25:20.545 c9f Level-0 table #5: started
+2020/05/02-21:25:20.546 c9f Level-0 table #5: 365 bytes OK
+2020/05/02-21:25:20.549 c9f Delete type=0 #3
+2020/05/02-21:25:20.549 c9f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,68 @@
+{
+   "bg_msg_1": {
+      "message": "Cannot find the downloaded PDF file!"
+   },
+   "bg_msg_2": {
+      "message": "Download was interrupted"
+   },
+   "bg_msg_3": {
+      "message": "Please wait..."
+   },
+   "options_bold": {
+      "message": "Important note"
+   },
+   "options_download": {
+      "message": "Download PDF file first, then open with the PDF reader"
+   },
+   "options_examples": {
+      "message": "Example:"
+   },
+   "options_faqs": {
+      "message": "Open FAQs page on updates"
+   },
+   "options_footnote_1": {
+      "message": "If path is not provided, the default PDF application is used. If the executable path contains spaces, make sure to surround the path with double-quotes (e.g.: \"C:\\Program Files (x86)\\...\")"
+   },
+   "options_footnote_2": {
+      "message": "If this option is checked, when a PDF link is left-clicked, the extension will use your external PDF reader to open the file instead of the built-in PDF reader (tab refresh is required)"
+   },
+   "options_footnote_3": {
+      "message": "If this option is checked, the PDF file is being downloaded to the default download directory of your browser, then the downloaded link is sent to the external PDF reader. Note that for this option to work, the path to the external executable needs to be set first."
+   },
+   "options_footnote_4": {
+      "message": "If you want to uncheck this option, first make sure your external executable can handle opening remote links. Most known desktop PDF readers cannot open from remote URLs."
+   },
+   "options_footnote_5": {
+      "message": "Only use this path validation tool if the absolute path to the executable is inserted. If for instance, you need to use a command or a relative path, this tool is not working properly"
+   },
+   "options_github": {
+      "message": "Open GitHub page"
+   },
+   "options_link": {
+      "message": "Capture the left-click on the PDF links"
+   },
+   "options_notify": {
+      "message": "Display desktop notifications"
+   },
+   "options_open_faqs": {
+      "message": "Open the FAQs page"
+   },
+   "options_path": {
+      "message": "Path to a PDF Reader executable:"
+   },
+   "options_reset": {
+      "message": "Reset"
+   },
+   "options_save": {
+      "message": "Save"
+   },
+   "options_support": {
+      "message": "Support Development"
+   },
+   "options_translate": {
+      "message": "Translate this extension to your language"
+   },
+   "options_validate": {
+      "message": "Validate"
+   }
+}
